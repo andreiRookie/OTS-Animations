@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <declare-styleable name="TikTokStyleAnimatedViewGroup">
+    <declare-styleable name="TikTokStyleAnimatedView">
         <attr name="circlesRadius" format="dimension" />
         <attr name="firstCircleColor" format="color" />
         <attr name="secondCircleColor" format="color" />
@@ -11,6 +11,11 @@
     <declare-styleable name="CircleView">
         <attr name="radius" format="dimension" />
         <attr name="color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="RippleAnimationViewGroup">
+        <attr name="circlesCount" format="integer" />
+        <attr name="circlesColor" format="color" />
     </declare-styleable>
 
 </resources>

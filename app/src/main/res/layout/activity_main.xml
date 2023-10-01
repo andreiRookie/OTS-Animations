@@ -39,10 +39,84 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintGuide_begin="250dp" />
+
+<!--    <ru.otus.animations.TikTokStyleAnimatedView-->
+<!--        android:id="@+id/tik_tok_view"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:firstCircleColor="@color/purple"-->
+<!--        app:secondCircleColor="@color/fuchsia"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/guideline"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"/>-->
+
+
+<!--    <FrameLayout-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/guideline"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent">-->
+<!--    <ru.otus.animations.RippleAnimationViewGroup-->
+<!--        android:id="@+id/ripple_anim"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"/>-->
+<!--    -->
+<!--    </FrameLayout>-->
+
+<!--    <include-->
+<!--        android:id="@+id/ripple_anim"-->
+<!--        layout="@layout/ripple_layout"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_marginBottom="731dp"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/tik_tok_anim"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent" />-->
+
+    <FrameLayout
+        android:id="@+id/ripple_anim"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/guideline"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintGuide_begin="350dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toBottomOf="parent">
+        <ru.otus.animations.CircleView
+            android:id="@+id/ripple_circle_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:color="@color/turquoise"
+            app:radius="32dp" />
+
+        <ru.otus.animations.CircleView
+            android:id="@+id/ripple_circle_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:color="@color/turquoise"
+            app:radius="64dp" />
+
+        <ru.otus.animations.CircleView
+            android:id="@+id/ripple_circle_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            app:color="@color/turquoise"
+            app:radius="96dp" />
+
+        <ru.otus.animations.CircleView
+            android:id="@+id/ripple_circle_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:color="@color/turquoise"
+            app:radius="128dp" />
+
+    </FrameLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
